@@ -9,7 +9,7 @@
 
       ./hardware-configuration.nix
 
-      ./../nixos/base.nix
+      ./../../nixos/base.nix
     ];
 
   home-manager = {
@@ -17,7 +17,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     users = {
-      j = import ../home-manager/base.nix;
+      j = import ../../home-manager/base.nix;
     };
   };
 
